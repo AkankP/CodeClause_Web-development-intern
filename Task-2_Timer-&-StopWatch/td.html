@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Timer And StopWatch</title>
+	<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,,600,600italic,700,700italic,,800,800italic,900,900italic);
+		.SW{
+			width: 100%;
+			max-width: 800px;
+			padding: 60px;
+			border-radius: 10px;
+			color: #fff;
+			background-color: #6994c5;
+			box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+			margin-left: 120px;
+			margin-top: 60px;
+			}
+		p{
+			font-size: 1em;
+			color: #000000;
+			font-weight: 500;
+			text-transform: uppercase;
+			margin-left: 70px;
+		}
+
+		h3{
+			margin-left: 270px;
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 25px;
+		}
+.wrapper{
+	padding:30px 0;
+	border-radius: 10px;
+	margin-top: 15px;
+	background: rgba(225,225,225,0.15);
+	box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+	backdrop-filter: blur(1.5px);
+	border: 1px solid rgba(225, 225, 225, 0.18);
+	transition: all 0.3s;
+}
+.wrapper:hover{
+	box-shadow: none;
+}
+
+	</style>
+</head>
+<body>
+<div class="container">
+    <nav>
+   		<a href="timer.html">Timer</a>
+   		<a href="stopwatch.html">StopWatch</a>
+   	</nav>
+   	<div class="SW">
+   		<div class="content">
+             <h3>Digital  Clock</h3>  			
+   		</div>
+   		<div class="outer-wrapper">
+   			<div class="clock">
+   				<div class="wrapper">
+   				   <p style="color:#fff;">Current Date and Time is: </p> 
+   				   <p><span id='date-time'></span>.</p> 
+   				</div>
+   			</div>
+   		</div>
+   		<script type="text/javascript">
+   		var dt = new Date();
+		document.getElementById('date-time').innerHTML=dt;
+   		</script>
+   	</div>
+</div>
+</body>
+</html>
