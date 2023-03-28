@@ -1,0 +1,99 @@
+*{
+	padding: 0; 
+	margin: 0; 
+	box-sizing: 
+	border-box;
+}
+body{
+	  background:url('bg.jpg');
+	  background-size: cover;
+	  height: 100vh;
+	  width: 100%;	
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+}
+.container{
+	width: 90%;
+	height: 80%;
+	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+}
+nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav a{
+	width: 50%;
+	display: flex;
+	color: #B5A3C5;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color:  powderblue;
+	padding: 10px;
+	margin: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	position: relative ;
+}
+nav a:before{
+    content: " ";
+    width: 0%;
+    border-bottom: 2px solid powderblue;
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
+nav a:hover:before{
+	width: 80%;
+	transition: 0.5s linear;
+}
+
+button{
+background:#96AED0;
+color:$white;
+border: solid 1px #96AED0;
+border-radius:5px 5px 5px 5px;
+text-decoration:none;
+cursor:pointer;
+font-size:1.3em;
+padding:18px 10px;
+width:180px;
+margin: 10px;
+outline: none;
+position: relative;
+}
+ button:hover{
+  background: transparent;
+  border: solid 1px lightpink;
+  color:white;
+  }
+#clockdiv{
+    font-family: sans-serif;
+    color:#41303C;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+
+}
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #CB9FD7;
+    display: inline-block;
+      border-radius: 6px 6px 6px 6px;
+}
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #F3E2EE;
+    color:#555555;
+    display: inline-block;
+    border-radius: 6px 6px 6px 6px;
+}
+smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
